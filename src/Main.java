@@ -3,10 +3,13 @@ public class Main {
     public static void main(String[] args) {
         PizzaCreator pizzaCreator = new PizzaCreator();
         int size = 1;
-        String topping = "cheese";
-        String dough = "thin";
-        pizzaCreator.getPizza(new MargheritaPizzaFactory(topping, dough, size));
-        pizzaCreator.getPizza(new HawaiianPizzaFactory(topping, dough, size));
-        pizzaCreator.getPizza(new PepperoniPizzaFactory(topping, dough, size));
+
+        String toppingMarg = "cheese";
+        String doughMarg = "thin";
+        pizzaCreator.getPizza(new MargheritaPizzaFactory(toppingMarg, doughMarg, size));
+
+        String toppingH = "sdfsdfcheese";
+        String doughH = "thindsd";
+        pizzaCreator.getPizza(new HawaiianPizzaFactory(toppingH, doughH, size));
     }
 }

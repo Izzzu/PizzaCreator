@@ -1,6 +1,4 @@
-/**
- * Created by izabela on 07/10/2017.
- */
+
 public class Hawaiian extends Pizza {
     public Hawaiian() {
     }

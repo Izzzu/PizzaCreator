@@ -23,6 +23,6 @@ public abstract class AbstractPizzaFactory {
         this.size = size;
     }
 
-    public abstract Pizza createPizza(String topping, String dough, int size);
+    public abstract Pizza createPizza(int size);
 
 }

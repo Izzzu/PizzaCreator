@@ -7,9 +7,9 @@ public class PepperoniPizzaFactory extends AbstractPizzaFactory{
     }
 
     @Override
-    public Pizza createPizza(String topping, String dough, int size) {
+    public Pizza createPizza(int size) {
         System.out.println("Create Pepperoni");
 
-        return new Pepperoni(size, topping, dough);
+        return new Pepperoni(size, getTopping(), getDough());
     }
 }
